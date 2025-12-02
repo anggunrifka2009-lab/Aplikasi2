@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormTransaksiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Form Transaksi"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNam"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="Masukkan Nama"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingStart="130dp"
+                    android:text="Makanan"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nasi"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.500"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp"/>
+
+                    <EditText
+                        android:id="@+id/etNasi"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:hint="JML"
+                        android:layout_marginStart="149dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ayam Goreng"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 8.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp" />
+
+                    <EditText
+                        android:id="@+id/etAyam"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="63dp"
+                        android:hint="JML" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tumis Kangkung"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 5.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp"/>
+
+                    <EditText
+                        android:id="@+id/etKangkung"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:hint="JML"
+                        android:layout_marginStart="38dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tempe Krispi"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 4.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp"/>
+
+                    <EditText
+                        android:id="@+id/etTempe"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:hint="JML"
+                        android:layout_marginStart="72dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mie Bangladesh"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 13.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp" />
+
+                    <EditText
+                        android:id="@+id/etMie"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:hint="JML"
+                        android:layout_marginStart="38dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingStart="140dp"
+                    android:paddingTop="5dp"
+                    android:text="Minuman"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Es Teh"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp" />
+
+                    <EditText
+                        android:id="@+id/etTeh"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="130dp"
+                        android:hint="JML" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teh Anget"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 6.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp"/>
+
+                    <EditText
+                        android:id="@+id/etAnget"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:hint="JML"
+                        android:layout_marginStart="95dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lemon Tea"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 4.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp" />
+
+                    <EditText
+                        android:id="@+id/etLemon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="88dp"
+                        android:hint="JML" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Es Cincau"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 6.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp" />
+
+                    <EditText
+                        android:id="@+id/etCincau"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:hint="JML"
+                        android:layout_marginStart="97dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nutrisari"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 4.000"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="18dp"
+                        android:layout_marginStart="25dp" />
+
+                    <EditText
+                        android:id="@+id/etNutri"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:hint="JML"
+                        android:layout_marginStart="111dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#80BFFF"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Hitung"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

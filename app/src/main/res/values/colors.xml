@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blueBackground">#F2F6FF</color>
+    <color name="blueCard">#FFFFFF</color>
+    <color name="bluePrimary">#2F5DFF</color>
+    <color name="blueTitle">#1A1F36</color>
+    <color name="blueSubtitle">#6B7280</color>
+    <color name="blueText">#1A1F36</color>
+    <color name="blueDarkBackground">#0F172A</color>
+    <color name="blueDarkCard">#1E293B</color>
+    <color name="blueAccent">#3B82F6</color>
+    <color name="blueTextPrimary">#E2E8F0</color>
+    <color name="blueTextSecondary">#94A3B8</color>
+</resources>
