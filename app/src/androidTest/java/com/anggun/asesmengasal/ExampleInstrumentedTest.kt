@@ -1,4 +1,4 @@
-package com.anggun.aplikasi
+package com.anggun.asesmengasal
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

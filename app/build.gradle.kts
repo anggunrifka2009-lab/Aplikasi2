@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.anggun.aplikasi"
+    namespace = "com.anggun.asesmengasal"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.anggun.aplikasi"
+        applicationId = "com.anggun.asesmengasal"
         minSdk = 28
         targetSdk = 36
         versionCode = 1

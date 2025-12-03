@@ -1,4 +1,4 @@
-package com.anggun.aplikasi
+package com.anggun.asesmengasal
 
 import android.content.Intent
 import android.os.Bundle
@@ -52,10 +52,19 @@ class CardActivity : AppCompatActivity() {
             Toast.makeText(this@CardActivity,"Profie Diklik", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, Profile::class.java))
         }
-        exitcard.setOnClickListener{
-            Toast.makeText(this@CardActivity,"Exit Diklik", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, Exit::class.java))
-        }
+        exitcard.setOnClickListener {
+            val builder = androidx.appcompat.app.AlertDialog.Builder(this)
+            builder.setTitle("Konfirmasi")
+            builder.setMessage("Apakah kamu yakin ingin keluar?")
+            builder.setPositiveButton("Ya") { _, _ ->
+                finishAffinity()
+            }
+            builder.setNegativeButton("Tidak") { dialog, _ ->
+                dialog.dismiss()
+            }
+            builder.show()
+
+    }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

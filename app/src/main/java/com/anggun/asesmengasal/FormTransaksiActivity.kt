@@ -1,41 +1,50 @@
-package com.anggun.aplikasi
+package com.anggun.asesmengasal
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.jvm.java
-import kotlin.text.toIntOrNull
 
 class FormTransaksiActivity : AppCompatActivity() {
+
+    private lateinit var etNam: EditText
+    private lateinit var etNasi: EditText
+    private lateinit var etAyam: EditText
+    private lateinit var etKangkung: EditText
+    private lateinit var etTempe: EditText
+    private lateinit var etMie: EditText
+
+    private lateinit var etTeh: EditText
+    private lateinit var etAnget: EditText
+    private lateinit var etLemon: EditText
+    private lateinit var etCincau: EditText
+    private lateinit var etNutri: EditText
+    private lateinit var btnHitung: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form_transaksi)
 
-        // Ambil edittext sesuai XML baru
-        val etNam = findViewById<EditText>(R.id.etNam)
+        etNam = findViewById(R.id.etNam)
+        etNasi = findViewById(R.id.etNasi)
+        etAyam = findViewById(R.id.etAyam)
+        etKangkung = findViewById(R.id.etKangkung)
+        etTempe = findViewById(R.id.etTempe)
+        etMie = findViewById(R.id.etMie)
 
-        val etNasi = findViewById<EditText>(R.id.etNasi)
-        val etAyam = findViewById<EditText>(R.id.etAyam)
-        val etKangkung = findViewById<EditText>(R.id.etKangkung)
-        val etTempe = findViewById<EditText>(R.id.etTempe)
-        val etMie = findViewById<EditText>(R.id.etMie)
+        etTeh = findViewById(R.id.etTeh)
+        etAnget = findViewById(R.id.etAnget)
+        etLemon = findViewById(R.id.etLemon)
+        etCincau = findViewById(R.id.etCincau)
+        etNutri = findViewById(R.id.etNutri)
 
-        val etTeh = findViewById<EditText>(R.id.etTeh)
-        val etAnget = findViewById<EditText>(R.id.etAnget)
-        val etLemon = findViewById<EditText>(R.id.etLemon)
-        val etCincau = findViewById<EditText>(R.id.etCincau)
-        val etNutri = findViewById<EditText>(R.id.etNutri)
-        val btnHitung = findViewById<Button>(R.id.btnHitung)
+        btnHitung = findViewById(R.id.btnHitung)
 
         btnHitung.setOnClickListener {
 
-            // ambil nama
             val nama = etNam.text.toString()
 
-            // ambil jumlah, kalau kosong → 0
             val nasi = etNasi.text.toString().toIntOrNull() ?: 0
             val ayam = etAyam.text.toString().toIntOrNull() ?: 0
             val kangkung = etKangkung.text.toString().toIntOrNull() ?: 0
@@ -48,8 +57,6 @@ class FormTransaksiActivity : AppCompatActivity() {
             val cincau = etCincau.text.toString().toIntOrNull() ?: 0
             val nutri = etNutri.text.toString().toIntOrNull() ?: 0
 
-
-            // kirim data ke nota
             val intent = Intent(this, NotaTransaksi::class.java)
 
             intent.putExtra("nama", nama)

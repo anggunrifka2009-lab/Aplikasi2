@@ -44,7 +44,7 @@
                     android:layout_height="100dp"
                     android:layout_marginBottom="8dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_default_profile" />
+                    android:src="@drawable/gwehj" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -209,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="12dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="anggunrifka2009@gmail.com"
+                        android:text="manusia itu hidup"
                         android:textSize="13sp"/>
 
                 </androidx.cardview.widget.CardView>

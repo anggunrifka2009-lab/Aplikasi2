@@ -1,34 +1,29 @@
-package com.anggun.aplikasi
+package com.anggun.asesmengasal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import kotlin.collections.forEach
-import kotlin.text.contains
-import kotlin.text.dropLast
-import kotlin.text.isEmpty
-import kotlin.text.isNotEmpty
-import kotlin.text.toDouble
-import kotlin.to
 
 class Kalkulator : AppCompatActivity() {
 
     private lateinit var tvHasil: TextView
+    private lateinit var tvOperasi: TextView
 
     private var input = ""
     private var operator = ""
     private var angkaPertama = ""
+    private var selesai = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kalkulator)
 
         tvHasil = findViewById(R.id.tvHasil)
+        tvOperasi = findViewById(R.id.tvHasil2)
 
-        // Angka
         val angkaButtons = mapOf(
-            R.id.btn0 to "00",
+            R.id.btn00 to "00",
             R.id.btn0 to "0",
             R.id.btn1 to "1",
             R.id.btn2 to "2",
@@ -43,52 +38,42 @@ class Kalkulator : AppCompatActivity() {
 
         angkaButtons.forEach { (id, angka) ->
             findViewById<Button>(id).setOnClickListener {
+                if (selesai) return@setOnClickListener
                 input += angka
                 tvHasil.text = input
             }
         }
 
-        // Operator
-        val btnPlus: Button = findViewById(R.id.btnPlus)
-        val btnKurang: Button = findViewById(R.id.btnKurang)
-        val btnKali: Button = findViewById(R.id.btnKali)
-        val btnBagi: Button = findViewById(R.id.btnBagi)
+        findViewById<Button>(R.id.btnPlus).setOnClickListener { pilihOperator("+") }
+        findViewById<Button>(R.id.btnKurang).setOnClickListener { pilihOperator("-") }
+        findViewById<Button>(R.id.btnKali).setOnClickListener { pilihOperator("×") }
+        findViewById<Button>(R.id.btnBagi).setOnClickListener { pilihOperator("÷") }
 
-        btnPlus.setOnClickListener { pilihOperator("+") }
-        btnKurang.setOnClickListener { pilihOperator("-") }
-        btnKali.setOnClickListener { pilihOperator("*") }
-        btnBagi.setOnClickListener { pilihOperator("/") }
-
-        // Koma
-        val btnKoma: Button = findViewById(R.id.btnKoma)
-        btnKoma.setOnClickListener {
+        findViewById<Button>(R.id.btnKoma).setOnClickListener {
             if (!input.contains(".")) {
                 input += "."
                 tvHasil.text = input
             }
         }
 
-        // Clear
-        val btnC: Button = findViewById(R.id.btnC)
-        btnC.setOnClickListener {
+        findViewById<Button>(R.id.btnC).setOnClickListener {
             input = ""
-            angkaPertama = ""
             operator = ""
+            angkaPertama = ""
+            tvOperasi.text = ""
             tvHasil.text = "0"
+            selesai = false
         }
 
-        // Delete
-        val btnDel: Button = findViewById(R.id.btnDel)
-        btnDel.setOnClickListener {
+        findViewById<Button>(R.id.btnDel).setOnClickListener {
             if (input.isNotEmpty()) {
                 input = input.dropLast(1)
+                selesai = false
                 tvHasil.text = if (input.isEmpty()) "0" else input
             }
         }
 
-        // Sama Dengan "="
-        val btnSaDeng: Button = findViewById(R.id.btnSaDeng)
-        btnSaDeng.setOnClickListener {
+        findViewById<Button>(R.id.btnSaDeng).setOnClickListener {
             if (angkaPertama.isNotEmpty() && operator.isNotEmpty() && input.isNotEmpty()) {
                 hitungHasil()
             }
@@ -100,6 +85,10 @@ class Kalkulator : AppCompatActivity() {
             angkaPertama = input
             operator = op
             input = ""
+            selesai = false
+
+            // Menampilkan operasi seperti "5 -"
+            tvOperasi.text = "$angkaPertama $operator"
         }
     }
 
@@ -109,16 +98,21 @@ class Kalkulator : AppCompatActivity() {
         val hasil = when (operator) {
             "+" -> a + b
             "-" -> a - b
-            "*" -> a * b
-            "/" -> if (b == 0.0) 0.0 else a / b
+            "×" -> a * b
+            "÷" -> if (b == 0.0) 0.0 else a / b
             else -> 0.0
         }
 
+        // Tampilkan operasi lengkap: "5 - 4 ="
+        tvOperasi.text = "$angkaPertama $operator $input ="
+
+        // Hasil besar seperti di gambar
         tvHasil.text = hasil.toString()
 
         input = hasil.toString()
         angkaPertama = ""
         operator = ""
-    }
 
+        selesai = true
+    }
 }

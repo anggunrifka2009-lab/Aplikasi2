@@ -12,22 +12,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aplikasi">
         <activity
-            android:name=".Exit"
-            android:exported="false" />
-        <activity
-            android:name=".Profile"
-            android:exported="false" />
-        <activity
-            android:name=".KonversiSuhu"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".CardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".FormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HasilFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Kalkulator"
+            android:exported="true" />
+        <activity
+            android:name=".Exit"
+            android:exported="true" />
+        <activity
+            android:name=".FormTransaksiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotaTransaksi"
+            android:exported="true" />
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".KonversiSuhu"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
         </activity>
     </application>
 
