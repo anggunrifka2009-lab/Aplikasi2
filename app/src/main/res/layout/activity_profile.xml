@@ -302,6 +302,7 @@
                             android:layout_marginTop="5dp"/>
 
                         <TextView
+                            android:id="@+id/tvRumah"
                             android:layout_width="280dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_regular"

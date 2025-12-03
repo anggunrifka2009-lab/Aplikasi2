@@ -1,20 +1,68 @@
 package com.anggun.asesmengasal
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Profile : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_profile)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val tvEmail = findViewById<TextView>(R.id.tvEmail)
+        val tvNowa = findViewById<TextView>(R.id.tvNowa)
+        val tvRumah = findViewById<TextView>(R.id.tvRumah)
+
+        tvEmail.setOnClickListener {
+            val email = tvEmail.text.toString()
+
+            val intent = Intent(Intent.ACTION_SENDTO).apply {
+                data = Uri.parse("mailto:$email")
+            }
+
+            intent.setPackage("com.google.android.gm")
+
+            try {
+                startActivity(intent)
+            } catch (e: ActivityNotFoundException) {
+                Toast.makeText(this, "Aplikasi Gmail tidak ditemukan", Toast.LENGTH_SHORT).show()
+            }
         }
+
+        tvNowa.setOnClickListener {
+            val number = tvNowa.text.toString()
+
+            val waIntent = Intent(Intent.ACTION_VIEW).apply {
+                data = Uri.parse("https://wa.me/$number")
+                setPackage("com.whatsapp")
+            }
+
+            try {
+                startActivity(waIntent)
+            } catch (e: Exception) {
+                Toast.makeText(this, "WhatsApp tidak ditemukan", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        tvRumah.setOnClickListener {
+            val alamat = tvRumah.text.toString()
+
+            val mapsIntent = Intent(Intent.ACTION_VIEW).apply {
+                data = Uri.parse("geo:0,0?q=${Uri.encode(alamat)}")
+                setPackage("com.google.android.apps.maps")
+            }
+
+            try {
+                startActivity(mapsIntent)
+            } catch (e: Exception) {
+                Toast.makeText(this, "Google Maps tidak ditemukan", Toast.LENGTH_SHORT).show()
+            }
+        }
+
     }
 }
