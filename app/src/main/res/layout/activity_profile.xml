@@ -16,204 +16,311 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="15dp"
             android:fontFamily="@font/poppins_bold"
             android:gravity="center"
             android:text="Profile"
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="30dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:orientation="vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/ivProfile"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_width="155dp"
+                    android:layout_height="155dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gwehj" />
+                    android:src="@drawable/img_8" />
 
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anggun Rifka"
+                android:layout_marginTop="17dp"
+                android:textSize="17sp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Studio student"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="20dp"
             android:layout_marginEnd="25dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama Lengkap"
-                    android:fontFamily="@font/poppins_semibold"/>
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    app:cardCornerRadius="14dp"
-                    app:cardElevation="4dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/img_9" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="Anggun Rifka Riatmoko"
-                        android:textSize="13sp" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="4dp">
 
-                </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Nama"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Anggun Rifka Riatmoko"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="25dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Email"
-                    android:fontFamily="@font/poppins_semibold"/>
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    app:cardCornerRadius="13dp"
-                    app:cardElevation="4dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/img_11" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="anggunrifka2009@gmail.com"
-                        android:textSize="13sp"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="4dp">
 
-                </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Email"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="anggunrifka2009@gmail.com"
+                            android:textSize="13sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nomer HP"
-                    android:fontFamily="@font/poppins_semibold"/>
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    app:cardCornerRadius="13dp"
-                    app:cardElevation="4dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/img_12" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="081567906262"
-                        android:textSize="13sp"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="4dp">
 
-                </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="No.Hp"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tvNowa"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="08156790662"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="25dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Gender" />
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    app:cardCornerRadius="13dp"
-                    app:cardElevation="4dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/img_10" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="Perempuan"
-                        android:textSize="13sp" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="4dp">
 
-                </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Tanggal Lahir"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="08-Juli-2009"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="25dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bio"
-                    android:fontFamily="@font/poppins_semibold"/>
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    app:cardCornerRadius="13dp"
-                    app:cardElevation="4dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/img_13" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="manusia itu hidup"
-                        android:textSize="13sp"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="4dp">
 
-                </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Alamat"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Mayang, Gatak, Sukoharjo RT 03 RW 03"
+                            android:textSize="13sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="25dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"/>
 
         </LinearLayout>
 
