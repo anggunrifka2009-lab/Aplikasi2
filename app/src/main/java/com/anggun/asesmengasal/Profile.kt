@@ -17,15 +17,16 @@ class Profile : AppCompatActivity() {
         val tvEmail = findViewById<TextView>(R.id.tvEmail)
         val tvNowa = findViewById<TextView>(R.id.tvNowa)
         val tvRumah = findViewById<TextView>(R.id.tvRumah)
+        val tvGithub = findViewById<TextView>(R.id.tvGithub)
 
+        // -------- EMAIL -> GMAIL --------
         tvEmail.setOnClickListener {
             val email = tvEmail.text.toString()
 
             val intent = Intent(Intent.ACTION_SENDTO).apply {
                 data = Uri.parse("mailto:$email")
+                setPackage("com.google.android.gm")
             }
-
-            intent.setPackage("com.google.android.gm")
 
             try {
                 startActivity(intent)
@@ -34,6 +35,7 @@ class Profile : AppCompatActivity() {
             }
         }
 
+        // -------- WA -> WHATSAPP --------
         tvNowa.setOnClickListener {
             val number = tvNowa.text.toString()
 
@@ -49,6 +51,7 @@ class Profile : AppCompatActivity() {
             }
         }
 
+        // -------- MAPS -> GOOGLE MAPS --------
         tvRumah.setOnClickListener {
             val alamat = tvRumah.text.toString()
 
@@ -64,5 +67,22 @@ class Profile : AppCompatActivity() {
             }
         }
 
+        // -------- GITHUB -> BROWSER / GITHUB APP --------
+        tvGithub.setOnClickListener {
+            val url = tvGithub.text.toString()
+
+            val githubIntent = Intent(Intent.ACTION_VIEW).apply {
+                data = Uri.parse(
+                    if (url.startsWith("http")) url
+                    else "https://$url"
+                )
+            }
+
+            try {
+                startActivity(githubIntent)
+            } catch (e: Exception) {
+                Toast.makeText(this, "Tidak bisa membuka GitHub", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
