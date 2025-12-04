@@ -31,10 +31,10 @@ class CardActivity : AppCompatActivity() {
 
             startActivity(Intent(this, FormActivity::class.java)) // cara pertama - simple //pindah activity saat di klik
             // cara kedua - agak ribet tapi ada kelebihan bisa di tambah kan data untuk di kirim di activity berikutnya
-            val intent = Intent(this@CardActivity, FormActivity::class.java)
-            intent.putExtra("Nama", "Anggun")
-            intent.putExtra("Kelas", "XI RPL")
-            startActivity(intent)
+            //val intent = Intent(this@CardActivity, FormActivity::class.java)
+            //intent.putExtra("Nama", "Anggun")
+           // intent.putExtra("Kelas", "XI RPL")
+            //startActivity(intent)
         }
         helpdeskcard.setOnClickListener{
             Toast.makeText(this@CardActivity,"Form Transaksi Diklik", Toast.LENGTH_SHORT).show()
