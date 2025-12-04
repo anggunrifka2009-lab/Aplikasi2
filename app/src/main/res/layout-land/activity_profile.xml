@@ -87,7 +87,6 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -96,7 +95,7 @@
                             android:src="@drawable/img_9" />
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="300dp"
+                            android:layout_width="635dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
@@ -135,7 +134,6 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -144,7 +142,7 @@
                             android:src="@drawable/img_11" />
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="300dp"
+                            android:layout_width="635dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
@@ -184,7 +182,6 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -193,7 +190,7 @@
                             android:src="@drawable/img_12" />
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="300dp"
+                            android:layout_width="635dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
@@ -223,7 +220,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -233,7 +229,6 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -242,55 +237,7 @@
                             android:src="@drawable/img_10" />
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="300dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginEnd="10dp"
-                            app:cardCornerRadius="13dp"
-                            app:cardElevation="4dp">
-
-                            <TextView
-                                android:layout_width="280dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="12dp"
-                                android:layout_marginTop="5dp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Tanggal Lahir"
-                                android:textSize="13sp" />
-
-                            <TextView
-                                android:layout_width="280dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="12dp"
-                                android:layout_marginTop="25dp"
-                                android:fontFamily="@font/poppins_regular"
-                                android:text="08-Juli-2009"
-                                android:textSize="13sp" />
-
-                        </androidx.cardview.widget.CardView>
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/img_10" />
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="300dp"
+                            android:layout_width="635dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
@@ -329,7 +276,6 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -338,7 +284,7 @@
                             android:src="@drawable/img_13" />
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="300dp"
+                            android:layout_width="635dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
