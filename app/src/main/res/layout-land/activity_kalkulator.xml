@@ -19,7 +19,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:gravity="center"
-            android:padding="15dp"
             android:text="Kalkulator"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -40,7 +39,7 @@
                     android:gravity="end"
                     android:paddingTop="17dp"
                     android:paddingEnd="20dp"
-                    android:text="0"
+                    android:text=""
                     android:textSize="25dp" />
 
                 <TextView
@@ -66,12 +65,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btnC"
                         android:layout_width="201dp"
-                        android:layout_height="65dp"
+                        android:layout_height="60dp"
                         android:layout_marginLeft="4dp"
                         android:layout_marginRight="4dp"
                         android:layout_weight="1"
@@ -84,9 +84,7 @@
                     <Button
                         android:id="@+id/btnDel"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/blueDarkCard"
                         android:fontFamily="@font/poppins_bold"
@@ -97,9 +95,7 @@
                     <Button
                         android:id="@+id/btnBagi"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/blueDarkCard"
                         android:fontFamily="@font/poppins_bold"
@@ -112,14 +108,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btn7"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -130,9 +125,7 @@
                     <Button
                         android:id="@+id/btn8"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -143,9 +136,7 @@
                     <Button
                         android:id="@+id/btn9"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -156,9 +147,7 @@
                     <Button
                         android:id="@+id/btnKali"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/blueDarkCard"
                         android:text="×"
@@ -170,14 +159,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btn4"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -188,9 +176,7 @@
                     <Button
                         android:id="@+id/btn5"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -201,9 +187,7 @@
                     <Button
                         android:id="@+id/btn6"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -214,9 +198,7 @@
                     <Button
                         android:id="@+id/btnKurang"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/blueDarkCard"
                         android:text="-"
@@ -228,14 +210,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btn1"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -246,9 +227,7 @@
                     <Button
                         android:id="@+id/btn2"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -259,9 +238,7 @@
                     <Button
                         android:id="@+id/btn3"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -272,9 +249,7 @@
                     <Button
                         android:id="@+id/btnPlus"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/blueDarkCard"
                         android:text="+"
@@ -286,14 +261,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btn00"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -304,9 +278,7 @@
                     <Button
                         android:id="@+id/btn0"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="#212020"
                         android:fontFamily="@font/poppins_bold"
@@ -317,9 +289,7 @@
                     <Button
                         android:id="@+id/btnKoma"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/blueDarkCard"
                         android:fontFamily="@font/poppins_bold"
@@ -330,9 +300,7 @@
                     <Button
                         android:id="@+id/btnSaDeng"
                         android:layout_width="100dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_height="60dp"                        android:layout_marginRight="4dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/blueDarkCard"
                         android:text="="
